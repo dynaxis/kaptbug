@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://dl.bintray.com/kotlin/kotlin-eap-1.1"
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin'
+
+repositories {
+    maven {
+        url "https://dl.bintray.com/kotlin/kotlin-eap-1.1"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    ext.autoServiceVersion = '1.0-rc2'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    compile "com.google.auto.service:auto-service:$autoServiceVersion"
+    kapt "com.google.auto.service:auto-service:$autoServiceVersion"
+}

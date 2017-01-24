@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.1.0-beta-17'
+//    ext.kotlin_version = '1.0.6'
+
+    repositories {
+        maven {
+            url "https://dl.bintray.com/kotlin/kotlin-eap-1.1"
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin'
+
+repositories {
+    maven {
+        url "https://dl.bintray.com/kotlin/kotlin-eap-1.1"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile project(":processor")
+    kapt project(":processor")
+}

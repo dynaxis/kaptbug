@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":processor" external.linked.project.path="$MODULE_DIR$/../../../processor" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="kaptbug" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../processor/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/../../../processor/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../processor">
+      <sourceFolder url="file://$MODULE_DIR$/../../../processor/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../processor/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../processor/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../processor/src/test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../processor/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../processor/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../processor/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../processor/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-runtime:1.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.auto.service:auto-service:1.0-rc2" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.auto:auto-common:0.3" level="project" />
+  </component>
+</module>
